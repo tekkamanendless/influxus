@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	"github.com/influxdata/influxdb/client/v2"
 	"github.com/vlad-doru/influxus"
 )
