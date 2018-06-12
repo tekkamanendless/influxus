@@ -79,7 +79,7 @@ func (hook *Hook) spawnBatchHandler() {
 	}
 	err = hook.config.Client.Write(batch)
 	if err != nil {
-		logrus.Fatalf("Could not write batch of points to InfluxDB: %v", err)
+		logrus.Errorf("Could not write batch of points to InfluxDB: %v", err)
 	}
 	// After we tried to write the batch we spawn a new batch handler.
 	go hook.spawnBatchHandler()
